@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- symbolfont icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- refer blog.filestack.com -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+
+</head>
+
+<body>
+    <div id="window">
+        <input type="file" id="x" multiple type="file" accept="audio/*">
+        <div id="mainbox">
+            <div id="innerMainBox">
+                <div id="title">
+                    <div id="innerTitle">
+
+                        <marquee behavior="" direction="left" scrollamount="3">
+                            <div id="musicName">Song name goes here </div>
+                        </marquee>
+                        <!-- <marquee behavior="alternate" direction="left" scrollamount="3" > -->
+                        <div id="singer">Artist name</div>
+                        <!-- </marquee> -->
+                    </div>
+                </div>
+                <div id="image">
+                    <div id="circle">
+                        <div id="innerCircle">
+                            <img src="defaultImage.jpg" alt="" id="innerCircleImg">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="controler">
+                    <audio id="sound" src=""></audio>
+                    <div id="progressContainer">
+                        <div id="progressed_duration">
+                            <div id="currentTime">0:00</div>
+                            <div id="duration">0:00</div>
+                        </div>
+                        <div id="progressDiv">
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+                    <div id="button">
+                        <span id="playPrev">
+                            <button><i class="	fa fa-step-backward"></i></button>
+                        </span>
+                        <span id="replay">
+                            <button><i class="fa fa-refresh"></i></button>
+                        </span>
+                        <span id="playPause">
+                            <button><i class="fa fa-play"></i></button>
+                        </span>
+                        <span id="playNext">
+                            <button><i class="fa fa-step-forward"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
